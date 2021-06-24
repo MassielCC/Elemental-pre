@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>particles.js</title>
+  <meta name="description" content="particles.js is a lightweight JavaScript library for creating particles.">
+  <meta name="author" content="Vincent Garreau" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" media="screen" href="css/style.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Viga&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200&display=swap" rel="stylesheet">
+
+</head>
+<style>
+  p{
+    font-family: 'Raleway', sans-serif;
+  }
+  .green-background {
+     background: linear-gradient(to right top, #a4de02, #71cb43, #47b55d, #2d9e6b, #2e856e) !important;
+  }
+  
+  .green-backgroundb {
+    background-image: linear-gradient(to right top, #2e856e, #2d9e6b, #47b55d, #71cb43, #a4de02) !important;   
+  }
+  .primaryFont{
+    font-family: 'Viga',sans-serif;
+  }
+</style>  
+<body>
+
+<!-- count particles 
+<div class="count-particles">
+  <span class="js-count-particles">--</span> particles
+</div>-->
+
+
+<!-- particles.js container -->
+<div id="particles-js" class="green-background">
+  <section style="padding-bottom: 150px; position: absolute; border: 1px solid black;" class="pb_section" id="section-home">
+    <div class="container">
+      <div class="row justify-content-center mb-4">
+        <div class="col-md-10 text-center mb-5">
+          <h2 style="font-size: 5em; color: white;" class="heading mb-6 primaryFont">ELEMENTAL</h2>
+            <div style="font-size:20px; color: rgba(255,255,255,0.8);" class="sub-heading"><p>La red de investigación y emprendimiento que buscabas.</p></div>  
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- scripts -->
+<script src="../particles.js"></script>
+<script src="js/app.js"></script>
+
+<!-- stats.js -->
+<script src="js/lib/stats.js"></script>
+<script>
+  var count_particles, stats, update;
+  stats = new Stats;
+  stats.setMode(0);
+  stats.domElement.style.position = 'absolute';
+  stats.domElement.style.left = '0px';
+  stats.domElement.style.top = '0px';
+  document.body.appendChild(stats.domElement);
+  count_particles = document.querySelector('.js-count-particles');
+  update = function() {
+    stats.begin();
+    stats.end();
+    if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+      count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+    }
+    requestAnimationFrame(update);
+  };
+  requestAnimationFrame(update);
+</script>
+
+<h2>Hola</h2>
+<h1>Hola again</h1>
+
+</body>
+</html>
