@@ -8,7 +8,7 @@ var Stats = function () {
 	var ms = 0, msMin = Infinity, msMax = 0;
 	var fps = 0, fpsMin = Infinity, fpsMax = 0;
 	var frames = 0, mode = 0;
-/*
+
 	var container = document.createElement( 'div' );
 	container.id = 'stats';
 	container.addEventListener( 'mousedown', function ( event ) { event.preventDefault(); setMode( ++ mode % 2 ) }, false );
@@ -29,7 +29,7 @@ var Stats = function () {
 	fpsGraph.id = 'fpsGraph';
 	fpsGraph.style.cssText = 'position:relative;width:74px;height:30px;background-color:#0ff';
 	fpsDiv.appendChild( fpsGraph );
-*/
+
 	while ( fpsGraph.children.length < 74 ) {
 
 		var bar = document.createElement( 'span' );
@@ -37,7 +37,7 @@ var Stats = function () {
 		fpsGraph.appendChild( bar );
 
 	}
-/*
+
 	var msDiv = document.createElement( 'div' );
 	msDiv.id = 'ms';
 	msDiv.style.cssText = 'padding:0 0 3px 3px;text-align:left;background-color:#020;display:none';
@@ -53,7 +53,7 @@ var Stats = function () {
 	msGraph.id = 'msGraph';
 	msGraph.style.cssText = 'position:relative;width:74px;height:30px;background-color:#0f0';
 	msDiv.appendChild( msGraph );
-*/
+
 	while ( msGraph.children.length < 74 ) {
 
 		var bar = document.createElement( 'span' );
@@ -77,7 +77,6 @@ var Stats = function () {
 				msDiv.style.display = 'block';
 				break;
 		}
-
 	};
 
 	var updateGraph = function ( dom, value ) {
@@ -90,15 +89,11 @@ var Stats = function () {
 	return {
 
 		REVISION: 12,
-
 		domElement: container,
-
 		setMode: setMode,
 
 		begin: function () {
-
 			startTime = Date.now();
-
 		},
 
 		end: function () {
@@ -125,21 +120,14 @@ var Stats = function () {
 
 				prevTime = time;
 				frames = 0;
-
 			}
-
 			return time;
-
 		},
 
 		update: function () {
-
 			startTime = this.end();
-
 		}
-
 	}
-
 };
 
 if ( typeof module === 'object' ) {
