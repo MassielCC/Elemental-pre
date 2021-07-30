@@ -51,15 +51,11 @@
 
 
 <!-- particles.js container -->
-<div id="particles-js" class="green-background">
-  <section style="padding-bottom: 150px; position: absolute; width: 100%; border: 1px solid black;" class="pb_section" id="section-home">
-    <div class="container">
-      <div class="row justify-content-center mb-4">
-        <div class="col-md-10 text-center mb-5">
-          <h2 style="font-size: 5em; color: white;" class="heading mb-6 primaryFont">ELEMENTAL</h2>
-            <div style="font-size:20px; color: rgba(255,255,255,0.8);" class="sub-heading"><p>La red de investigación y emprendimiento que buscabas.</p></div>  
-        </div>
-      </div>
+<div id="particles-js" class="green-background" style="position: relative;">
+  <section style="position: absolute;left: 24%; top: 12%;" class="pb_section" id="section-home">
+    <div class="container text-center" >
+        <h2 style="font-size: 8vw; color: white; width: auto;" class="primaryFont">ELEMENTAL</h2>
+        <div style="font-size:20px; color: rgba(255,255,255,0.8);" class="sub-heading"><p>La red de investigación y emprendimiento que buscabas.</p></div>  
     </div>
   </section>
 </div>
@@ -90,6 +86,278 @@
   requestAnimationFrame(update);
 </script>
 
+<style>
+  body::-webkit-scrollbar{
+    width:7px;
+    background: #f2f2f2;
+  }
+  body::-webkit-scrollbar-thumb{
+    background: rgba(0,0,0,.5);
+    border-radius: 5px;
+    border-left: 2px solid #fff;
+  }
+  .container1{
+    width: 100%;
+  }
+
+  .posterall{
+    width: 100%;
+    padding: 40px 30px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .poster{
+    width: 18%;
+    margin: 1%; 
+    background-repeat: no-repeat;
+  }
+  .p1{
+    background-image: url("img/quimica.jpg");
+    background-size: cover;
+    transform: translateY(-10px);
+    height: 300px;
+  }
+  .p2{
+    background-image: url("img/laboratorio.jpg");
+    background-size: cover;
+    transform: translateY(-30px);
+    height: 380px;
+  }
+  .p3{
+    background-image: url("img/calculos.jpg");
+    background-size: 230%;
+    background-position-x: 10%;
+    transform: translateY(60px);
+    height: 360px;
+  }
+  .p4{
+    background-image: url("img/graficos.jpg");
+    background-size: 280%;
+    background-position-x: 80%;
+    transform: translateY(-20px);
+    height: 350px;
+  }
+  .p5{
+    background-image: url("img/codigo.jpg");  
+    background-size: 220%;
+    background-position: right top;
+    transform: translateY(80px);
+    height: 280px;
+  }
+  .sectionP{
+    margin: auto;
+    padding: 80px 30px;
+  }
+  .parrafo{
+    font-size: 24px;
+    margin: 30px 0px;
+  }
+  .greenFont{
+    color:#57BC90;
+  }
+  .skyFont{
+    color:#77C9D4;
+  }
+  .boton1{
+    background-color: #57BC90;
+    color: white;
+    font-size: 2vw;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 15px;
+  }
+  .contenido{
+    margin: 30px;
+    border-bottom: 3px solid #77C9D4;
+    border-right: 3px solid #77C9D4;
+  }
+  .number p{
+    font-size: 6vw;
+    padding: 0px 15px;
+  }
+  .texto1{
+    padding:0px;
+    height: auto;
+  }
+  .texto1>p{
+    font-size: 18px;
+  }
+  .flexstyle{
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  .footer{
+    width: 90%;
+    margin: 20px auto 0px auto;
+  }
+  .content{
+    padding: 10px 10px;
+  }
+  .copyright{
+    background-color: #57BC90;
+    margin-top:15px;
+  }
+  #contacto i{
+    color: white;
+    padding:5px;
+    border-radius: 50%;
+    background:#57BC90;
+    margin-right: 8px;
+    margin-bottom:5px;
+  }
+  #Rsociales a{
+    color: white;
+  }
+  #facebook{
+    background-color: #1A4789;
+    padding: 6px 10px;
+    border-radius: 50%;
+  }
+  #instagram{
+    background-color: #5E17EB;
+    padding: 6px 9px;
+    border-radius: 50%;
+  }
+  #twitter{
+    background-color: #1B9DF0;
+    padding: 6px 9px;
+    border-radius: 50%;
+  }
+  #tiktok{
+    background-color: #000000;
+    padding: 6px 10px;
+    border-radius: 50%;
+  }
+</style>
+
+<div class="container">
+  <div class="sectionP col-md-7 text-center">
+    <h3>NOSOTROS</h3>
+    <h2 class="greenFont primaryFont" style="font-size:3vw;">¿Qué es ELEMENTAL?</h2>
+
+    <div class="parrafo">
+      <p>Somos la primera red en el Perú que conecta estudiantes universitarios, investigadores y emprendedores.</p>
+      <p>Sinapsis te permite encontrar las mejores mentes para impulsar tu proyecto o unirte al que más se adapte a tu perfil.</p>
+    </div>
+    
+    <button class="boton1">CREATE UNA CUENTA</button>
+  </div>
+</div>
+
+<div class="container1">
+
+  <div class="posterall">
+    <div class="poster p1">
+
+    </div>
+    <div class="poster p2">
+
+    </div>
+    <div class="poster p3">
+
+    </div>
+    <div class="poster p4">
+      
+    </div>
+    <div class="poster p5">
+
+    </div>
+  </div>
+
+</div>
+
+<div class="container1">
+  <div class="sectionP text-center">
+    <h3>¿CÓMO FORMO PARTE?</h3>
+    <h2 class="skyFont primaryFont" style="font-size:3vw;">Pasos</h2>
+    
+    <div class="row">
+
+      <div class="col-md-4">
+        
+        <div class="contenido flexstyle">
+          <div class="number">
+            <p class="skyFont primaryFont">1</p>
+          </div>
+  
+          <div class="texto1 text-left">
+            <h3 class="primaryFont skyFont">Registrate</h3>
+            <p>Llena tus datos y personaliza tu cuenta.</p>
+          </div> 
+
+        </div>
+        
+      </div>
+        
+      <div class="col-md-4">
+        <div class="contenido flexstyle">
+
+          <div class="number">
+            <p class="skyFont primaryFont">2</p>
+          </div>
+
+          <div class="texto1 text-left">
+            <h3 class="primaryFont skyFont">Preséntate</h3>
+            <p>Cuéntale a las personas de tu experiencia en investigación y emprendimiento. </p>
+          </div>
+         
+        </div>
+        
+      </div>
+        
+      <div class="col-md-4">
+        <div class="contenido flexstyle">
+          <div class="number">
+            <p class="skyFont primaryFont">3</p>
+          </div>
+          
+          <div class="texto1 text-left">
+            <h3 class="primaryFont skyFont">Únete</h3>
+            <p>Postula a un proyecto o selecciona candidatos para el tuyo.</p>
+          </div>
+         
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="footer">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="content">
+          <h4 class="greenFont primaryFont">Elemental</h4>
+          <p>La red que te conecta con estudiantes e investigadores para impulsar tus proyectos</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="content" id="contacto">
+          <h4 class="greenFont primaryFont">Contacto</h4>
+            <ul>
+              <li><i class="fas fa-envelope"></i>ejemplo123@gmail.com</li>
+              <li><i class="fas fa-phone-alt"></i>987654321</li>
+            </ul>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="content" id="Rsociales">
+          <h4 class="greenFont primaryFont">Redes sociales</h4>
+            <ul>
+              <a href="#"><i id="facebook" class="fab fa-facebook-f"></i></a>
+              <a href="#"><i id="instagram" class="fab fa-instagram"></i></a>
+              <a href="#"><i id="twitter" class="fab fa-twitter"></i></a>
+              <a href="#"><i id="tiktok" class="fab fa-tiktok"></i></a>
+            </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="copyright text-center">
+    <p class="primaryFont" style="color:white; font-size: 18px; padding-top: 6px; margin-bottom: 2px;">2021. Todos los derechos reservados</p>
+  </div>
+</footer>
 
 </body>
 </html>
