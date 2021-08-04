@@ -12,10 +12,6 @@
   font-weight: normal;
   font-style: normal; }
 
-.primaryFont{
-  font-family: 'Viga', sans-serif;
-  font-weight: 600 !important;
-}
 .BoldHeading{
   font-family: 'Viga',sans-serif;
   font-weight: 500!important;
@@ -244,9 +240,9 @@
     .pb_feature-v2 .media-body .heading {
       font-size: 20px;
       font-family: "Montserrat", Arial, sans-serif; }
-  .pb_feature-v1.pb_feature-circle,
-  .pb_feature-v2.pb_feature-circle {
-    /* circle with background color */ }
+  /*.pb_feature-v1.pb_feature-circle, .pb_feature-v2.pb_feature-circle {
+
+     circle with background color}*/
     .pb_feature-v1.pb_feature-circle .pb_icon,
     .pb_feature-v2.pb_feature-circle .pb_icon {
       line-height: 0;
@@ -764,7 +760,7 @@ input, select, textarea {
   position: relative; }
   .pb_select-wrap:before {
     font-family: 'Ionicons';
-    speak: none;
+    /*speak: none;*/
     font-style: normal;
     font-weight: normal;
     font-variant: normal;
@@ -1511,7 +1507,7 @@ a {
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     font-family: 'Ionicons';
-    speak: none;
+    /*speak: none;*/
     font-style: normal;
     font-weight: normal;
     font-variant: normal;
