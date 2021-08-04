@@ -1,0 +1,96 @@
+body::-webkit-scrollbar{
+    width:7px;
+    background: #f2f2f2;
+}
+body::-webkit-scrollbar-thumb{
+    background: rgba(0,0,0,.5);
+    border-radius: 5px;
+    border-left: 2px solid #fff;
+}
+/*--------------------*/
+.nav-link{
+  color: #47b55d !important;
+}
+.pb_navbar.scrolled.pb_scrolled-light ul li a.active {
+  color: #47b55d !important;
+}
+.navbar-brand{
+  color: #47b55d !important;
+}
+@media screen and (min-width:768px) {
+  .hide-desktop {
+    display: none;
+  }
+}
+@media screen and (max-width:768px) {
+  .hide-mobile {
+    display: none;
+  }
+}
+.navbar {
+  background-color: rgba(0,0,0,0.6);
+}
+.pb_navbar .navbar-nav {
+  background-color: rgba(0,0,0,0);
+}
+/*----------------------*/
+p{
+    font-family: 'Raleway', sans-serif !important;
+}
+.green-background {
+    background: linear-gradient(to right top, #a4de02, #71cb43, #47b55d, #2d9e6b, #2e856e) !important;
+}
+  
+.green-backgroundb {
+    background-image: linear-gradient(to right top, #2e856e, #2d9e6b, #47b55d, #71cb43, #a4de02) !important;   
+}
+.primaryFont{
+    font-family: 'Viga',sans-serif !important;
+}
+
+.flexstyle{
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  .footer{
+    width: 90%;
+    margin: 20px auto 0px auto;
+  }
+  .content{
+    padding: 10px 10px;
+  }
+  .copyright{
+    background-color: #57BC90;
+    margin-top:15px;
+  }
+  #contacto i{
+    color: white;
+    padding:5px;
+    border-radius: 50%;
+    background:#57BC90;
+    margin-right: 8px;
+    margin-bottom:5px;
+  }
+  #Rsociales a{
+    color: white;
+  }
+  #facebook{
+    background-color: #1A4789;
+    padding: 6px 10px;
+    border-radius: 50%;
+  }
+  #instagram{
+    background-color: #5E17EB;
+    padding: 6px 9px;
+    border-radius: 50%;
+  }
+  #twitter{
+    background-color: #1B9DF0;
+    padding: 6px 9px;
+    border-radius: 50%;
+  }
+  #tiktok{
+    background-color: #000000;
+    padding: 6px 10px;
+    border-radius: 50%;
+  }
